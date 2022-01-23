@@ -4,8 +4,6 @@ Flutter app that displays the list of bestsellers from [New york times API](http
 
 ## Features
 - Display books
-
-## To-Do
 - Display Book details
 
 ## Screenshots

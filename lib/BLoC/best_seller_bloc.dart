@@ -20,9 +20,9 @@ class BestSellersBloc {
   void _addBooks(List<Book> booksResponse) =>
       _booksStreamController.add(booksResponse);
 
-  void getBestSellers() async {
+  void getBestSellers(String date) async {
     final response = await http.get(
-        Uri.parse("${Constants.bestSellersUrl}&api-key=${Constants.apiKey}"));
+        Uri.parse("${Constants.bestSellersUrl}&published-date=$date&api-key=${Constants.apiKey}"));
     if (response.statusCode == 200) {
       try {
         final BooksResponse booksResponse =
