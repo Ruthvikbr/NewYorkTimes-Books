@@ -1,5 +1,8 @@
 name: CI/CD tests
 
+on:
+  push:
+
 jobs:
   analyze:
     runs-on: macos-latest
