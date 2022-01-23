@@ -1,4 +1,4 @@
-import 'BookDetails.dart';
+import 'book_details.dart';
 
 class Book {
   Book({required this.rank, required this.bookDetailsList});

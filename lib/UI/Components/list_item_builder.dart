@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_york_times_books/UI/Components/EmptyListContent.dart';
+import 'package:new_york_times_books/UI/Components/empty_list_content.dart';
 
 typedef ItemWidgetBuilder<T> = Widget Function(BuildContext context, T item);
 
@@ -37,8 +37,8 @@ class ListItemBuilder<T> extends StatelessWidget {
     return ListView.separated(
         itemCount: items.length + 2,
         separatorBuilder: (context, index) => const Divider(
-          height: 0.5,
-        ),
+              height: 0.5,
+            ),
         itemBuilder: (context, index) {
           if (index == 0 || index == items.length + 1) {
             return Container();

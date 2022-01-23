@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:new_york_times_books/BLoC/best_seller_bloc.dart';
 import 'package:new_york_times_books/Models/book.dart';
-import 'package:new_york_times_books/UI/Components/BooksListItem.dart';
-import 'package:new_york_times_books/UI/Components/ListItemBuilder.dart';
+import 'package:new_york_times_books/UI/Components/books_list_item.dart';
+import 'package:new_york_times_books/UI/Components/list_item_builder.dart';
 import 'package:new_york_times_books/UI/Screens/book_details.dart';
 
 class BooksList extends StatefulWidget {
@@ -69,7 +69,6 @@ class _BooksListState extends State<BooksList> {
   }
 
   Future<void> _selectDate(BuildContext context) async {
-    print(date);
     final DateTime? selectedDate = await showDatePicker(
       context: context,
       initialDate: DateTime.parse(date),

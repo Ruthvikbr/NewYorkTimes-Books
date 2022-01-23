@@ -7,7 +7,7 @@ class BooksResponse {
 
   factory BooksResponse.fromJson(Map<String, dynamic> json) {
     return BooksResponse(
-      results: List<Book>.from(json["results"].map( (x) => Book.fromJson(x))),
+      results: List<Book>.from(json["results"].map((x) => Book.fromJson(x))),
     );
   }
 }

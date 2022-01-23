@@ -14,7 +14,8 @@ class DetailItem extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Text(label.toUpperCase(),
-            style: const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold)),
+            style:
+                const TextStyle(fontSize: 24.0, fontWeight: FontWeight.bold)),
         Text(
           content,
           style: const TextStyle(fontSize: 20.0, fontWeight: FontWeight.normal),

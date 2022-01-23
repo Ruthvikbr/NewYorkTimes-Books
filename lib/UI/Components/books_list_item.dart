@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:new_york_times_books/Models/book.dart';
 
@@ -27,18 +26,16 @@ class BooksListItem extends StatelessWidget {
                   Text(
                     book.bookDetailsList[0].title,
                     style: const TextStyle(
-                      fontSize: 16.0,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.black87
-                    ),
+                        fontSize: 16.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black87),
                   ),
                   Text(
                     book.bookDetailsList[0].author,
                     style: const TextStyle(
-                      fontSize: 12.0,
-                      fontWeight: FontWeight.normal,
-                        color: Colors.black45
-                    ),
+                        fontSize: 12.0,
+                        fontWeight: FontWeight.normal,
+                        color: Colors.black45),
                   )
                 ],
               ),

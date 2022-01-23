@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:new_york_times_books/Models/BookDetails.dart';
+import 'package:new_york_times_books/Models/book_details.dart';
 import 'package:new_york_times_books/UI/Components/detail_item.dart';
 
 class BookDetailsPage extends StatelessWidget {
